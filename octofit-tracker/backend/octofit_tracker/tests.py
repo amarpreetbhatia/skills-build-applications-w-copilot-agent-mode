@@ -1,29 +1,31 @@
 from django.test import TestCase
 from .models import User, Team, Activity, Leaderboard, Workout
 
-class UserModelTest(TestCase):
+class UserTest(TestCase):
     def test_user_creation(self):
-        user = User.objects.create(username='testuser', email='test@example.com', password='password')
-        self.assertEqual(user.username, 'testuser')
+        user = User.objects.create(username="testuser", email="testuser@example.com")
+        self.assertEqual(user.username, "testuser")
+        self.assertEqual(user.email, "testuser@example.com")
 
-class TeamModelTest(TestCase):
+class TeamTest(TestCase):
     def test_team_creation(self):
-        team = Team.objects.create(name='Test Team')
-        self.assertEqual(team.name, 'Test Team')
+        team = Team.objects.create(name="Test Team")
+        self.assertEqual(team.name, "Test Team")
 
-class ActivityModelTest(TestCase):
+class ActivityTest(TestCase):
     def test_activity_creation(self):
-        user = User.objects.create(username='testuser', email='test@example.com', password='password')
-        activity = Activity.objects.create(user=user, activity_type='Running', duration='01:00:00')
-        self.assertEqual(activity.activity_type, 'Running')
+        activity = Activity.objects.create(name="Running", duration=30)
+        self.assertEqual(activity.name, "Running")
+        self.assertEqual(activity.duration, 30)
 
-class LeaderboardModelTest(TestCase):
+class LeaderboardTest(TestCase):
     def test_leaderboard_creation(self):
-        user = User.objects.create(username='testuser', email='test@example.com', password='password')
-        leaderboard = Leaderboard.objects.create(user=user, score=100)
+        leaderboard = Leaderboard.objects.create(rank=1, score=100)
+        self.assertEqual(leaderboard.rank, 1)
         self.assertEqual(leaderboard.score, 100)
 
-class WorkoutModelTest(TestCase):
+class WorkoutTest(TestCase):
     def test_workout_creation(self):
-        workout = Workout.objects.create(name='Test Workout', description='Test Description')
-        self.assertEqual(workout.name, 'Test Workout')
+        workout = Workout.objects.create(name="Morning Workout", calories_burned=200)
+        self.assertEqual(workout.name, "Morning Workout")
+        self.assertEqual(workout.calories_burned, 200)
