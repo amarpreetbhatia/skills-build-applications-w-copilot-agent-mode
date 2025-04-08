@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const API_BASE_URL = 'https://super-duper-carnival-q9grvg57g7fv7v-8000.app.github.dev/api/';
+const API_BASE_URL = 'https://super-duper-carnival-q9grvg57g7fv7v-8000.app.github.dev/api/workouts';
 
 function Workouts() {
   const [workouts, setWorkouts] = useState([]);
