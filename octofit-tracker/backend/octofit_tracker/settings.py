@@ -131,3 +131,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Enable CORS
 CORS_ALLOW_ALL_ORIGINS = True
+
+# Add the Codespace Django REST API endpoint suffix
+CODESPACE_API_SUFFIX = 'https://super-duper-carnival-q9grvg57g7fv7v-8000.app.github.dev/'
