@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 
+const API_BASE_URL = 'https://super-duper-carnival-q9grvg57g7fv7v-8000.app.github.dev/api/';
+
 function Users() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch('https://super-duper-carnival-q9grvg57g7fv7v-8000.app.github.dev/api/users/')
+    fetch(`${API_BASE_URL}users/`)
       .then(response => response.json())
       .then(data => setUsers(data))
       .catch(error => console.error('Error fetching users:', error));
