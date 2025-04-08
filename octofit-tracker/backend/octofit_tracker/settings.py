@@ -17,7 +17,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
+# See https://docs.djangoproject.com/en/5.2/howto/deployment-checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "django-insecure-@@haxnh#b4$oqmegy7jc*!q!aw(4fcpk%^i(*pnjjf3^-g!yxk"
@@ -39,9 +39,10 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "tracker",
     "corsheaders",
+    "rest_framework",
+    "djongo",
+    "octofit_tracker",
 ]
-
-INSTALLED_APPS += ['octofit_tracker']
 
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
