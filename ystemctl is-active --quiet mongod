@@ -1,0 +1,17 @@
+[33mcommit f9d5aaa06f544d89a1f735e31bd0479b6e292adf[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mbuild-octofit-app[m[33m, [m[1;31morigin/build-octofit-app[m[33m)[m
+Author: Amarpreet Bhatia <amarpreetbhatia@gmail.com>
+Date:   Tue Apr 8 04:37:42 2025 +0000
+
+    build-octofit-app inital directory and mongo db setup
+
+[33mcommit ff24a36e604b456db49fbf0716d4afca4eef6370[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
+Date:   Tue Apr 8 01:59:13 2025 +0000
+
+    Start exercise
+
+[33mcommit 3b994d4de51e986ea630518398bbd8f84718342b[m
+Author: Amarpreet Bhatia <amarpreetbhatia@gmail.com>
+Date:   Tue Apr 8 11:59:01 2025 +1000
+
+    Initial commit
